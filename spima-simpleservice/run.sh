@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
+#!/bin/sh
 echo "********************************************************"
 echo "Starting spima-simpleservice "
 echo "********************************************************"
-java -jar /usr/local/simpleservice/${JAR_FILE} -Djava.security.egd=file:/dev/./urandom
+java -jar /usr/local/simpleservice/spima-simpleservice-1.0.jar
