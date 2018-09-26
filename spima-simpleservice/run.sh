@@ -2,4 +2,4 @@
 echo "********************************************************"
 echo "Starting spima-simpleservice "
 echo "********************************************************"
-java -jar /usr/local/simpleservice/${bootJar.archiveName} -Djava.security.egd=file:/dev/./urandom
+java -jar /usr/local/simpleservice/${JAR_FILE} -Djava.security.egd=file:/dev/./urandom
