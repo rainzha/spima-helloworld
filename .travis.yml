@@ -23,8 +23,4 @@ env:
   - SPIMA_SIMPLESERVICE_DOCKER_IMAGE=rainzha/spima-simpleservice:latest
 script:
 - gradle build docker
-deploy:
-  provider: script
-  script: bash travis_scripts/docker_push
-  on:
-    branch: master
+- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin docker push "$SPIMA_SIMPLESERVICE_DOCKER_IMAGE"
