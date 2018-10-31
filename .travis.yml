@@ -22,6 +22,5 @@ env:
   matrix:
   - SPIMA_SIMPLESERVICE_DOCKER_IMAGE=rainzha/spima-simpleservice:latest
 script:
-- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 - gradle build docker
-- docker push $SPIMA_SIMPLESERVICE_DOCKER_IMAGE
+- bash travis_scripts/docker_push
