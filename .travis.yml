@@ -23,5 +23,5 @@ env:
   - SPIMA_SIMPLESERVICE_DOCKER_IMAGE=org.rainzha/spima-simpleservice:latest
 script:
 - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-- gradle clean build docker
+- gradle build docker
 - docker push $SPIMA_SIMPLESERVICE_DOCKER_IMAGE
