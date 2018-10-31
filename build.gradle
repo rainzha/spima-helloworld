@@ -6,6 +6,6 @@ allprojects {
 }
 
 subprojects {
-    group = "org.rainzha"
+    group = "rainzha"
     version = '1.0'
 }
