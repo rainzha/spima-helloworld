@@ -23,4 +23,8 @@ env:
   - SPIMA_SIMPLESERVICE_DOCKER_IMAGE=rainzha/spima-simpleservice:latest
 script:
 - gradle build docker
-- bash travis_scripts/docker_push
+deploy:
+  provider: script
+  script: bash travis_scripts/docker_push
+  on:
+    branch: master
